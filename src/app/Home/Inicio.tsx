@@ -1,77 +1,72 @@
 'use client'
 import React from "react";
-import {Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
 
 const Inicio = ()=>{
-    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-    const menuItems = [
-        "Inicio",
-        "Skills",
-        "Proyectos",
-        "Contacto",
-    ];
     return(
         <>
-            <Navbar
-                isBordered
-                isMenuOpen={isMenuOpen}
-                onMenuOpenChange={setIsMenuOpen}
-            >
-                <NavbarContent className="sm:hidden" justify="start">
-                    <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
-                </NavbarContent>
+            <div className='bg-[#F6F6F6] w-5/6 m-auto flex flex-col gap-3'>
 
-                <NavbarContent className="sm:hidden pr-3" justify="center">
-                    <NavbarBrand>
+                <div className='text-white flex flex-row justify-start gap-3 md:h-36 h-28'>
+                    <div className='bg-[#08084A] rounded-2xl p-2 md:w-4/6 w-full'>
+                        <h1 style={{fontSize:'30px',fontWeight:'700'}}>👋</h1>
+                        <p></p>
+                    </div>
+                    <div className='rounded-2xl w-1/6 bg-[#5865F2] hidden md:flex'>
+                        <h1></h1>
+                    </div>
+                    <div className='rounded-2xl w-1/6 bg-[#08084A] hidden md:flex'>
+                        <h1></h1>
+                    </div>
+                </div>
 
-                        <p className="font-bold text-inherit">RAFA</p>
-                    </NavbarBrand>
-                </NavbarContent>
+                <div className='text-white flex flex-row justify-start md:h-36 h-28 gap-2'>
+                    <div className='rounded-2xl md:w-1/6 w-1/3 bg-[#5865F2] '>
+                        <h1></h1>
+                    </div>
+                    <div className='rounded-2xl md:w-1/6 w-1/3 bg-[#C1D5FC]'>
+                        <h1></h1>
+                    </div>
+                    <div className='rounded-2xl md:w-1/6 w-1/3 bg-[#192052]'>
+                        <h1></h1>
+                    </div>
+                    <div className='bg-gray-400 w-1/2 rounded-2xl md:flex hidden'>
+                        <h1></h1>
+                    </div>
+                </div>
+                <div className='bg-gray-400 rounded-2xl h-28 w-full md:hidden'>
+                    <h1>.</h1>
+                </div>
 
-                <NavbarContent className="hidden sm:flex gap-4" justify="center">
-                    <NavbarBrand>
+                <div className='flex flex-row gap-3 h-36'>
+                    <div className='bg-[#38383C] md:w-1/2 w-1/3 rounded-2xl'>
+                        <a href="#"></a>
+                    </div>
 
-                        <p className="font-bold text-inherit">RAFA</p>
-                    </NavbarBrand>
-                    <NavbarItem>
-                        <Link color="foreground" href="#">
-                            Inicio
-                        </Link>
-                    </NavbarItem>
-                    <NavbarItem isActive>
-                        <Link href="#" aria-current="page">
-                            Skills
-                        </Link>
-                    </NavbarItem>
-                    <NavbarItem>
-                        <Link color="foreground" href="#">
-                            Proyectos
-                        </Link>
-                    </NavbarItem>
-                    <NavbarItem>
-                        <Link color="foreground" href="#">
-                            Contacto
-                        </Link>
-                    </NavbarItem>
-                </NavbarContent>
+                    <div className='rounded-2xl w-1/3 bg-[#5865F2] flex md:hidden'>
+                        <h1></h1>
+                    </div>
+                    <div className='rounded-2xl w-1/3 bg-[#08084A] flex md:hidden'>
+                        <h1></h1>
+                    </div>
 
-                <NavbarMenu>
-                    {menuItems.map((item, index) => (
-                        <NavbarMenuItem key={`${item}-${index}`}>
-                            <Link
-                                className="w-full"
-                                color={
-                                    index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
-                                }
-                                href="#"
-                                size="lg"
-                            >
-                                {item}
-                            </Link>
-                        </NavbarMenuItem>
-                    ))}
-                </NavbarMenu>
-            </Navbar>
+                    <div className='myCard w-1/4 bg-[#E5E5E5] rounded-2xl md:flex hidden'>
+                        <h1></h1>
+                    </div>
+                    <div className='myCard w-1/4 bg-white rounded-2xl md:flex hidden'>
+                        <h1></h1>
+                    </div>
+
+
+                </div>
+                <div className='h-28 flex flex-row'>
+                    <div className='myCard w-1/2 bg-[#E5E5E5] rounded-2xl md:hidden flex'>
+                        <h1></h1>
+                    </div>
+                    <div className='myCard w-1/2 bg-white rounded-2xl md:hidden flex'>
+                        <h1></h1>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
