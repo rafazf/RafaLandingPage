@@ -1,11 +1,22 @@
 'use client'
 import React from "react";
-import {Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
+import {
+    Navbar,
+    NavbarBrand,
+    NavbarMenuToggle,
+    NavbarMenuItem,
+    NavbarMenu,
+    NavbarContent,
+    NavbarItem,
+    Link,
+    Button,
+    Image
+} from "@nextui-org/react";
 
 const Header = ()=>{
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const menuItems = [
-        "Header",
+        "Acerca de",
         "Skills",
         "Proyectos",
         "Contacto",
@@ -16,25 +27,25 @@ const Header = ()=>{
                 isMenuOpen={isMenuOpen}
                 onMenuOpenChange={setIsMenuOpen}
             >
-                <NavbarContent className="sm:hidden" justify="start">
+                <NavbarContent className="sm:hidden w-1/3" justify="start">
                     <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
                 </NavbarContent>
 
-                <NavbarContent className="sm:hidden pr-3" justify="center">
-                    <NavbarBrand>
-                        <p className="font-bold text-inherit">RAFA</p>
+                <NavbarContent className="sm:hidden pr-3 w-2/3 p-1" justify="center">
+                    <NavbarBrand className='flex justify-start ml-3'>
+                        <Image src='./img/rafa.png' alt='rafa' radius='none' width='80px'/>
                     </NavbarBrand>
                 </NavbarContent>
 
                 <NavbarContent className="hidden sm:flex gap-4 w-full " justify="center">
                     <NavbarContent className='items-center justify-center'>
                         <NavbarItem>
-                            <Link color="foreground" href="#">
+                            <Link color="foreground" href="inicio">
                                 Inicio
                             </Link>
                         </NavbarItem>
-                        <NavbarItem isActive>
-                            <Link href="#" aria-current="page">
+                        <NavbarItem>
+                            <Link href="#skills" aria-current="page">
                                 Skills
                             </Link>
                         </NavbarItem>
@@ -62,8 +73,9 @@ const Header = ()=>{
                                 color={
                                     index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
                                 }
-                                href="#"
+                                href={item === 'Acerca de' ? '#inicio': item === 'Skills'?'#skills':'#'}
                                 size="lg"
+                                onClick={()=>{setIsMenuOpen(false)}}
                             >
                                 {item}
                             </Link>

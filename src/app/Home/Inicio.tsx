@@ -1,5 +1,5 @@
 import React from "react";
-import { Image } from "@nextui-org/react";
+import {Image, Link} from "@nextui-org/react";
 const Inicio = ()=>{
     const styleOne = 'rounded-2xl w-1/6 hidden md:flex flex-col justify-center items-center relative'
     const styleTwo='rounded-2xl md:w-1/6 w-1/3 justify-center flex flex-col  items-center relative'
@@ -8,12 +8,12 @@ const Inicio = ()=>{
     const styleCardProject='w-1/4 rounded-2xl md:flex hidden justify-center items-center'
     return(
         <>
-            <div className='bg-[#F6F6F6] p-2 rounded-2xl w-5/6 m-auto flex flex-col gap-3'>
+            <div id='inicio' className='bg-[#F6F6F6] p-2 rounded-t-2xl w-5/6 m-auto flex flex-col gap-3'>
                 <div className='text-white flex flex-row justify-start gap-3 md:h-36 h-28'>
                     <div className='bg-[#08084A] rounded-2xl p-3 md:w-4/6 w-full'>
                         <h1 className='text-sm md:text-3xl font-bold'>👋 Hola, mi nombre es Rafael Zapata</h1>
                         <p className='text-[12px] md:text-lg mt-1'>Soy desarrollador <span className='font-bold'>frontend</span> con experiencia en
-                            <span className='font-bold'>Angular</span> Manejo
+                            <span className='font-bold'> Angular</span> Manejo
                             <span className='font-bold'> HTML</span>,
                             <span className='font-bold'> CSS</span> y
                             <span className='font-bold'> JavaScript</span>.
@@ -27,9 +27,13 @@ const Inicio = ()=>{
                     </div>
                     <div className={styleOne} style={{backgroundColor:'#08084A'}}>
                         <div className='top-2 right-2 absolute'>
-                            <Image src="./img/open.png" alt="open" className='w-1/4 md:w-[25px] '/>
+                            <Link href='mailto:raelzapataf@gmail.com' target='_blank'>
+                                <Image src="./img/open.png" alt="open" className='w-1/4 md:w-[25px] '/>
+                            </Link>
                         </div>
+
                         <Image src="./img/email.png" alt="email" style={{width:'80px'}}/>
+
                     </div>
                 </div>
                 <div className='text-white flex flex-row justify-start md:h-36 h-28 gap-2'>
@@ -40,7 +44,9 @@ const Inicio = ()=>{
                     </div>
                     <div className={styleTwo} style={{backgroundColor:'#C1D5FC'}}>
                         <div className='top-2 right-2 absolute'>
-                            <Image src="./img/open.png" alt="open" className='md:w-[25px] w-[20px]'/>
+                            <Link href='https://www.linkedin.com/in/gerardozapataflores/' target='_blank'>
+                                <Image src="./img/open.png" alt="open" className='md:w-[25px] w-[20px]'/>
+                            </Link>
                         </div>
                         <Image  src="./img/linkedin.png" alt="linkedin" width='100px'/>
                     </div>
@@ -56,7 +62,7 @@ const Inicio = ()=>{
                         <Image src="./img/unp.png" alt="unp" width='120px'/>
                     </div>
                 </div>
-                <div className='bg-gray-400 w-full rounded-2xl md:hidden flex p-2 justify-between items-center flex-row text-white'
+                <div className='bg-gray-400 w-full rounded-2xl md:hidden flex p-2 justify-between items-center flex-row text-white h-28'
                      style={{backgroundImage: 'url(./img/unp-entrada.png)', backgroundSize:'cover'}} >
                     <div className='flex flex-col'>
                         <h1 className='font-bold' style={{fontSize:'12px'}}>UNIVERSIDAD NACIONAL DE PIURA</h1>
@@ -75,7 +81,9 @@ const Inicio = ()=>{
                             <Image src="./img/github1.png" alt="github" className='w-[80px] md:w-[150px]'/>
                         </div>
                         <div className='flex flex-row justify-end items-end top-2 right-2 absolute'>
-                            <Image src="./img/open.png" alt="open" className='md:w-[25px] w-[20px]'/>
+                            <Link href='https://github.com/rafazf' target='_blank'>
+                                <Image src="./img/open.png" alt="open" className='md:w-[25px] w-[20px]'/>
+                            </Link>
                         </div>
                     </div>
 
@@ -88,7 +96,9 @@ const Inicio = ()=>{
 
                     <div className={styleOneAlt} style={{backgroundColor:'#08084A'}}>
                         <div className='top-2 right-2 absolute'>
-                            <img src="./img/open.png" alt="open" className='w-[20px] '/>
+                            <Link href='mailto:raelzapataf@gmail.com' target='_blank'>
+                                <img src="./img/open.png" alt="open" className='w-[20px] '/>
+                            </Link>
                         </div>
                         <Image radius='none' src="./img/email.png" alt="email" className='w-[50px]'/>
                     </div>
