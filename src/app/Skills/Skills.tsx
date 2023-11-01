@@ -1,7 +1,7 @@
 import React from "react";
 import {Image} from "@nextui-org/react";
 const Skills = () =>{
-    const styleText = 'text-7xl font-bold text-[#08084A] py-10'
+    const styleText = 'md:text-7xl text-4xl font-bold text-[#08084A] py-10'
     const cardFirst = 'bg-white text-center flex flex-row justify-evenly gap-2 p-3 rounded-2xl'
     const cardFirstCustom = 'bg-white text-center flex md:hidden flex-row justify-evenly gap-2 p-3 rounded-2xl'
 

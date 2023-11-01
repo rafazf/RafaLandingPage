@@ -48,7 +48,9 @@ const Inicio = ()=>{
                                 <Image src="./img/open.png" alt="open" className='md:w-[25px] w-[20px]'/>
                             </Link>
                         </div>
+                        <Link href='https://www.linkedin.com/in/gerardozapataflores/' target='_blank'>
                         <Image  src="./img/linkedin.png" alt="linkedin" width='100px'/>
+                        </Link>
                     </div>
                     <div className={styleTwo} style={{backgroundColor:'#192052', padding:'3px'}}>
                         <Image src="./img/skills1.png" alt="skills" width='120px'/>
