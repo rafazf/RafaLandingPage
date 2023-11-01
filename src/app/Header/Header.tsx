@@ -50,12 +50,12 @@ const Header = ()=>{
                             </Link>
                         </NavbarItem>
                         <NavbarItem>
-                            <Link color="foreground" href="#">
+                            <Link color="foreground" href="#portafolio">
                                 Proyectos
                             </Link>
                         </NavbarItem>
                         <NavbarItem>
-                            <Link color="foreground" href="#">
+                            <Link color="foreground" href="#contacto">
                                 Contacto
                             </Link>
                         </NavbarItem>
@@ -71,9 +71,9 @@ const Header = ()=>{
                             <Link
                                 className="w-full"
                                 color={
-                                    index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
+                                    index === menuItems.length - 1 ? "success" : "foreground"
                                 }
-                                href={item === 'Acerca de' ? '#inicio': item === 'Skills'?'#skills':'#'}
+                                href={item === 'Acerca de' ? '#inicio': item === 'Skills'?'#skills': item === 'Proyectos' ? '#portafolio':'#contacto'}
                                 size="lg"
                                 onClick={()=>{setIsMenuOpen(false)}}
                             >

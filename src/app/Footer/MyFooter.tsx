@@ -4,7 +4,7 @@ import {Image} from "@nextui-org/react";
 const MyFooter = () => {
     return(
         <>
-            <div id='portafolio' className='bg-[#08084A]  text-white w-5/6 md:h-40 m-auto flex flex-col justify-center items-center '>
+            <div id='contacto' className='bg-[#08084A]  text-white w-5/6 md:h-40 m-auto flex flex-col justify-center items-center '>
                 <div className='flex md:flex-row flex-col p-5 md:text-start text-center w-full justify-evenly'>
                     <div className='flex flex-col gap-2'>
                         <p className='font-bold'>Dirección</p>
@@ -17,7 +17,7 @@ const MyFooter = () => {
                         <p className='font-bold'>Email</p>
                         <p>raelzapataf@gmail.com</p>
                     </div>
-                    <div className='flex flex-col gap-2 md:items-start items-center'>
+                    <div className='flex flex-col gap-2 md:items-start items-center md:mt-0 mt-2'>
                         <p className='font-bold'>Redes Sociales</p>
                         <div className='flex flex-row w-1/6 md:w-1/2'>
                             <a href="https://instagram.com/rafaelzapataf?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr" target='_blank'>

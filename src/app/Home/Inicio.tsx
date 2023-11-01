@@ -61,7 +61,9 @@ const Inicio = ()=>{
                             <h1 className='font-bold'>UNIVERSIDAD NACIONAL DE PIURA</h1>
                             <h2>INGENIERÍA INFORMÁTICA</h2>
                         </div>
-                        <Image src="./img/unp.png" alt="unp" width='120px'/>
+                        <Link href="https://www.unp.edu.pe/" target='_blank'>
+                            <Image src="./img/unp.png" alt="unp" width='120px'/>
+                        </Link>
                     </div>
                 </div>
                 <div className='bg-gray-400 w-full rounded-2xl md:hidden flex p-2 justify-between items-center flex-row text-white h-28'
@@ -70,7 +72,9 @@ const Inicio = ()=>{
                         <h1 className='font-bold' style={{fontSize:'12px'}}>UNIVERSIDAD NACIONAL DE PIURA</h1>
                         <h2 style={{fontSize:'12px'}}>INGENIERÍA INFORMÁTICA</h2>
                     </div>
-                    <Image src="./img/unp.png" alt="unp" width='70px'/>
+                    <Link href="https://www.unp.edu.pe/" target='_blank'>
+                        <Image src="./img/unp.png" alt="unp" width='70px'/>
+                    </Link>
                 </div>
 
                 <div className='flex flex-row gap-3 md:h-36 h-28'>
