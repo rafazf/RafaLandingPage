@@ -8,7 +8,7 @@ const Inicio = ()=>{
     const styleCardProject='w-1/4 rounded-2xl md:flex hidden justify-center items-center'
     return(
         <>
-            <div id='inicio' className='bg-[#F6F6F6] p-2 rounded-t-2xl w-5/6 m-auto flex flex-col gap-3'>
+            <div id='inicio' className='bg-[#F6F6F6] p-2 rounded-t-2xl w-5/6     m-auto flex flex-col gap-3'>
                 <div className='text-white flex flex-row justify-start gap-3 md:h-36 h-28'>
                     <div className='bg-[#08084A] rounded-2xl p-3 md:w-4/6 w-full'>
                         <h1 className='text-sm md:text-3xl font-bold'>👋 Hola, mi nombre es Rafael Zapata</h1>
