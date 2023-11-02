@@ -13,11 +13,11 @@ const Inicio = ()=>{
                     <div className='bg-[#08084A] rounded-2xl p-3 md:w-4/6 w-full'>
                         <h1 className='text-sm md:text-3xl font-bold'>👋 Hola, mi nombre es Rafael Zapata</h1>
                         <p className='text-[12px] md:text-lg mt-1'>Soy desarrollador <span className='font-bold'>frontend</span> con experiencia en
-                            <span className='font-bold'> Angular</span> Manejo
+                            <span className='font-bold'> Angular</span>. Manejo
                             <span className='font-bold'> HTML</span>,
                             <span className='font-bold'> CSS</span> y
                             <span className='font-bold'> JavaScript</span>.
-                            Me apaciona aprender nuevas cosas y experimentar con nuevas tecnologias.</p>
+                            Me apaciona aprender nuevas cosas y experimentar con nuevas tecnologías.</p>
                     </div>
                     <div className={styleOne} style={{backgroundColor:'#5865F2'}}>
                         <div className='top-2 right-2 absolute'>
