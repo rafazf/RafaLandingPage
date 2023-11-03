@@ -20,9 +20,6 @@ const Inicio = ()=>{
                             Me apaciona aprender nuevas cosas y experimentar con nuevas tecnologías.</p>
                     </div>
                     <div className={styleOne} style={{backgroundColor:'#5865F2'}}>
-                        <div className='top-2 right-2 absolute'>
-                            <Image src="./img/open.png" alt="open" className='w-1/4 md:w-[25px] '/>
-                        </div>
                         <Image src="./img/logos_discord.png" radius='none' alt="discord" width='150px'/>
                     </div>
                     <div className={styleOne} style={{backgroundColor:'#08084A'}}>
@@ -94,9 +91,6 @@ const Inicio = ()=>{
                     </div>
 
                     <div className={styleOneAlt} style={{backgroundColor:'#5865F2'}}>
-                        <div className='top-2 right-2 absolute'>
-                            <img src="./img/open.png" alt="open" className='w-[20px] '/>
-                        </div>
                         <Image radius='none' src="./img/logos_discord.png" alt="discord" width='80px'/>
                     </div>
 
