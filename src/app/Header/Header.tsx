@@ -40,7 +40,7 @@ const Header = ()=>{
                 <NavbarContent className="hidden sm:flex gap-4 w-full " justify="center">
                     <NavbarContent className='items-center justify-center'>
                         <NavbarItem>
-                            <Link color="foreground" href="inicio">
+                            <Link color="foreground" href="#inicio">
                                 Inicio
                             </Link>
                         </NavbarItem>
